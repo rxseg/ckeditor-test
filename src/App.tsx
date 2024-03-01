@@ -7,11 +7,6 @@ const App = () => {
   const [editorData, setEditorData] = useState("");
   const [editor, setEditor] = useState<ClassicEditor | null>(null);
 
-  const handleImageUpload = (file: unknown) => {
-    console.log("Imagen subida:", file);
-    // Aquí puedes agregar la lógica para manejar el archivo de imagen, como enviarlo al servidor o procesarlo de alguna otra manera
-  };
-
   const handleSave = () => {
     // Implement your saving logic here, for example, sending a request to a server
     localStorage.setItem("editorData", editorData);
